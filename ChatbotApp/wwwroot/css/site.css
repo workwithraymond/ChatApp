@@ -63,18 +63,23 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
- .messages {
-     height: 800px;
-     border: 1px solid black;
-     width: 100%;
+.messages {
+    height: 500px;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    overflow-y: scroll;
+
 }
 
 .response {
+    float: left;
     background-color: gray;
     width: 80%;
     padding: 20px;
     margin: 5px 20px;
-    border-radius: 20px;
+    border-radius: 20px 20px 20px 0;
     color: white;
     font-size: 13px;
 }
@@ -85,7 +90,27 @@ a, .btn-link {
     width: 80%;
     padding: 20px;
     margin: 5px 20px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     color: white;
     font-size: 13px;
+}
+
+.textMessage input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: lightgray;
+}
+
+.textMessage input:focus {
+    outline: none;
+}
+
+.textMessage button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 0 0 20px 20px;
 }
